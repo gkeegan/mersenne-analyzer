@@ -11,7 +11,7 @@ This project aims to determine the randomness of the Mersenne Twister via a T-Te
 ### What each file does
 
 * analyzer.py generates random numbers and does a T-Test with them
-* generator.py saves the data used in analyzer.txt to a text file
+* generator.py saves the data used in analyzer.txt to a text file (this takes a long time, and if `runs=100_000_000` then the resulting file is 100,000,000 bytes/100 megabytes)
 
 ### Replicating my results
 
@@ -19,4 +19,4 @@ In the current state of the repository, if you clone it, when you run analyzer.p
 
 ### Getting your own results
 
-If you wish to run the program for yourself and get your own results, change the value of "seed" in analyzer.py to what you wish. If you also need the data, change it in generator.py as well.
+If you wish to run the program for yourself and get your own results, change the value of `seed` in analyzer.py to what you wish. If you also need the data, change it in generator.py as well.
